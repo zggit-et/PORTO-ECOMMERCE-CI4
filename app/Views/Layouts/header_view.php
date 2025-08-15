@@ -14,17 +14,16 @@
     <meta name="author" content="SW-THEMES">
         
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="assets/images/icons/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="<?= base_url(); ?>/public/assets/images/icons/favicon.ico">
 
     <!-- Plugins CSS File -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="<?= base_url(); ?>/public/assets/css/bootstrap.min.css">
 
     <!-- Main CSS File -->
-    <link rel="stylesheet" href="assets/css/style.min.css">
+    <link rel="stylesheet" href="<?= base_url(); ?>/public/assets/css/style.min.css">
 </head>
 <body>
-    <div class="page-wrapper">
-        <header class="header">
+   <header class="header">
             <div class="header-top">
                 <div class="container">
                     <div class="header-left header-dropdowns">
@@ -39,11 +38,11 @@
                         </div><!-- End .header-dropown -->
 
                         <div class="header-dropdown">
-                            <a href="#"><img src="assets/images/flags/en.png" alt="England flag">ENGLISH</a>
+                            <a href="#"><img src="<?= base_url(); ?>/public/assets/images/flags/en.png" alt="England flag">ENGLISH</a>
                             <div class="header-menu">
                                 <ul>
-                                    <li><a href="#"><img src="assets/images/flags/en.png" alt="England flag">ENGLISH</a></li>
-                                    <li><a href="#"><img src="assets/images/flags/fr.png" alt="France flag">FRENCH</a></li>
+                                    <li><a href="#"><img src="<?= base_url(); ?>/public/assets/images/flags/en.png" alt="England flag">ENGLISH</a></li>
+                                    <li><a href="#"><img src="<?= base_url(); ?>/public/assets/images/flags/fr.png" alt="France flag">FRENCH</a></li>
                                 </ul>
                             </div><!-- End .header-menu -->
                         </div><!-- End .header-dropown -->
@@ -58,11 +57,11 @@
                                     <ul class="compare-products">
                                         <li class="product">
                                             <a href="#" class="btn-remove" title="Remove Product"><i class="icon-cancel"></i></a>
-                                            <h4 class="product-title"><a href="product.html">Lady White Top</a></h4>
+                                            <h4 class="product-title"><a href="product.php">Lady White Top</a></h4>
                                         </li>
                                         <li class="product">
                                             <a href="#" class="btn-remove" title="Remove Product"><i class="icon-cancel"></i></a>
-                                            <h4 class="product-title"><a href="product.html">Blue Women Shirt</a></h4>
+                                            <h4 class="product-title"><a href="product.php">Blue Women Shirt</a></h4>
                                         </li>
                                     </ul>
 
@@ -82,11 +81,11 @@
                             <a href="#">Links</a>
                             <div class="header-menu">
                                 <ul>
-                                    <li><a href="my-account.html">MY ACCOUNT </a></li>
+                                    <li><a href="my-account.php">MY ACCOUNT </a></li>
                                     <li><a href="#">DAILY DEAL</a></li>
                                     <li><a href="#">MY WISHLIST </a></li>
-                                    <li><a href="blog.html">BLOG</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="blog.php">BLOG</a></li>
+                                    <li><a href="contact.php">Contact</a></li>
                                     <li><a href="#" class="login-link">LOG IN</a></li>
                                 </ul>
                             </div><!-- End .header-menu -->
@@ -99,7 +98,7 @@
                 <div class="container">
                     <div class="header-left">
                         <a href="index.html" class="logo">
-                            <img src="assets/images/logo.png" alt="Porto Logo">
+                            <img src="<?= base_url(); ?>/public/assets/images/logo.png" alt="Porto Logo">
                         </a>
                     </div><!-- End .header-left -->
 
@@ -156,7 +155,7 @@
                                         <div class="product">
                                             <div class="product-details">
                                                 <h4 class="product-title">
-                                                    <a href="product.html">Woman Ring</a>
+                                                    <a href="product.php">Woman Ring</a>
                                                 </h4>
 
                                                 <span class="cart-product-info">
@@ -166,8 +165,8 @@
                                             </div><!-- End .product-details -->
 
                                             <figure class="product-image-container">
-                                                <a href="product.html" class="product-image">
-                                                    <img src="assets/images/products/cart/product-1.jpg" alt="product">
+                                                <a href="product.php" class="product-image">
+                                                    <img src="<?= base_url(); ?>/public/assets/images/products/cart/product-1.jpg" alt="product">
                                                 </a>
                                                 <a href="#" class="btn-remove" title="Remove Product"><i class="icon-cancel"></i></a>
                                             </figure>
@@ -176,7 +175,7 @@
                                         <div class="product">
                                             <div class="product-details">
                                                 <h4 class="product-title">
-                                                    <a href="product.html">Woman Necklace</a>
+                                                    <a href="product.php">Woman Necklace</a>
                                                 </h4>
 
                                                 <span class="cart-product-info">
@@ -186,8 +185,8 @@
                                             </div><!-- End .product-details -->
 
                                             <figure class="product-image-container">
-                                                <a href="product.html" class="product-image">
-                                                    <img src="assets/images/products/cart/product-2.jpg" alt="product">
+                                                <a href="product.php" class="product-image">
+                                                    <img src="<?= base_url(); ?>/public/assets/images/products/cart/product-2.jpg" alt="product">
                                                 </a>
                                                 <a href="#" class="btn-remove" title="Remove Product"><i class="icon-cancel"></i></a>
                                             </figure>
@@ -201,8 +200,8 @@
                                     </div><!-- End .dropdown-cart-total -->
 
                                     <div class="dropdown-cart-action">
-                                        <a href="cart.html" class="btn">View Cart</a>
-                                        <a href="checkout-shipping.html" class="btn">Checkout</a>
+                                        <a href="cart.php" class="btn">View Cart</a>
+                                        <a href="checkout-shipping.php" class="btn">Checkout</a>
                                     </div><!-- End .dropdown-cart-total -->
                                 </div><!-- End .dropdownmenu-wrapper -->
                             </div><!-- End .dropdown-menu -->
@@ -212,12 +211,12 @@
             </div><!-- End .header-middle -->
         </header><!-- End .header -->
          <!-- Plugins JS File -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/plugins.min.js"></script>
+    <script src="<?= base_url(); ?>/public/assets/js/jquery.min.js"></script>
+    <script src="<?= base_url(); ?>/public/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="<?= base_url(); ?>/public/assets/js/plugins.min.js"></script>
 
     <!-- Main JS File -->
-    <script src="assets/js/main.min.js"></script>
+    <script src="<?= base_url(); ?>/public/assets/js/main.min.js"></script>
 </body>
 
 <!-- Mirrored from portotheme.com/html/porto/demo-6/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 14 Feb 2019 14:53:01 GMT -->
