@@ -53,13 +53,13 @@
                                 </div><!-- End .entry-date -->
 
                                 <h2 class="entry-title">
-                                    <a href="single.html">Post Format - Image</a>
+                                    <a href="single.php">Post Format - Image</a>
                                 </h2>
 
                                 <div class="entry-content">
                                     <p>Euismod atras vulputate iltricies etri elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla nunc dui, tristique in semper vel, congue sed ligula.</p>
 
-                                    <a href="single.html" class="read-more">Read More <i class="icon-angle-double-right"></i></a>
+                                    <a href="single.php" class="read-more">Read More <i class="icon-angle-double-right"></i></a>
                                 </div><!-- End .entry-content -->
 
                                 <div class="entry-meta">
@@ -76,7 +76,7 @@
 
                         <article class="entry">
                             <div class="entry-media">
-                                <a href="single.html">
+                                <a href="single.php">
                                     <div class="entry-slider owl-carousel owl-theme owl-theme-light">
                                         <img src="<?= base_url(); ?>/public/assets/images/blog/post-1.jpg" alt="Post">
                                         <img src="<?= base_url(); ?>/public/assets/images/blog/post-2.jpg" alt="Post">
@@ -92,13 +92,13 @@
                                 </div><!-- End .entry-date -->
 
                                 <h2 class="entry-title">
-                                    <a href="single.html">Post Format - Image Gallery</a>
+                                    <a href="single.php">Post Format - Image Gallery</a>
                                 </h2>
 
                                 <div class="entry-content">
                                     <p>Euismod atras vulputate iltricies etri elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla nunc dui, tristique in semper vel, congue sed ligula.</p>
 
-                                    <a href="single.html" class="read-more">Read More <i class="icon-angle-double-right"></i></a>
+                                    <a href="single.php" class="read-more">Read More <i class="icon-angle-double-right"></i></a>
                                 </div><!-- End .entry-content -->
 
                                 <div class="entry-meta">
@@ -121,13 +121,13 @@
                                 </div><!-- End .entry-date -->
 
                                 <h2 class="entry-title">
-                                    <a href="single.html">Hello World!</a>
+                                    <a href="single.php">Hello World!</a>
                                 </h2>
 
                                 <div class="entry-content">
                                     <p>Euismod atras vulputate iltricies etri elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla nunc dui, tristique in semper vel, congue sed ligula.</p>
 
-                                    <a href="single.html" class="read-more">Read More <i class="icon-angle-double-right"></i></a>
+                                    <a href="single.php" class="read-more">Read More <i class="icon-angle-double-right"></i></a>
                                 </div><!-- End .entry-content -->
 
                                 <div class="entry-meta">
@@ -144,7 +144,7 @@
 
                         <article class="entry">
                             <div class="entry-media">
-                                <a href="single.html">
+                                <a href="single.php">
                                     <img src="<?= base_url(); ?>/public/assets/images/blog/post-3.jpg" alt="Post">
                                 </a>
                             </div><!-- End .entry-media -->
@@ -156,13 +156,13 @@
                                 </div><!-- End .entry-date -->
 
                                 <h2 class="entry-title">
-                                    <a href="single.html">Post Format - Image</a>
+                                    <a href="single.php">Post Format - Image</a>
                                 </h2>
 
                                 <div class="entry-content">
                                     <p>Euismod atras vulputate iltricies etri elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla nunc dui, tristique in semper vel, congue sed ligula.</p>
 
-                                    <a href="single.html" class="read-more">Read More <i class="icon-angle-double-right"></i></a>
+                                    <a href="single.php" class="read-more">Read More <i class="icon-angle-double-right"></i></a>
                                 </div><!-- End .entry-content -->
 
                                 <div class="entry-meta">
@@ -227,12 +227,12 @@
                                 <ul class="simple-entry-list">
                                     <li>
                                         <div class="entry-media">
-                                            <a href="single.html">
+                                            <a href="single.php">
                                                 <img src="<?= base_url(); ?>/public/assets/images/blog/widget/post-1.jpg" alt="Post">
                                             </a>
                                         </div><!-- End .entry-media -->
                                         <div class="entry-info">
-                                            <a href="single.html">Post Format - Video</a>
+                                            <a href="single.php">Post Format - Video</a>
                                             <div class="entry-meta">
                                                 April 08, 2018
                                             </div><!-- End .entry-meta -->
@@ -241,12 +241,12 @@
 
                                     <li>
                                         <div class="entry-media">
-                                            <a href="single.html">
+                                            <a href="single.php">
                                                 <img src="<?= base_url(); ?>/public/assets/images/blog/widget/post-2.jpg" alt="Post">
                                             </a>
                                         </div><!-- End .entry-media -->
                                         <div class="entry-info">
-                                            <a href="single.html">Post Format - Image</a>
+                                            <a href="single.php">Post Format - Image</a>
                                             <div class="entry-meta">
                                                 March 23, 2016
                                             </div><!-- End .entry-meta -->
@@ -302,58 +302,58 @@
             <span class="mobile-menu-close"><i class="icon-cancel"></i></span>
             <nav class="mobile-nav">
                 <ul class="mobile-menu">
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.php">Home</a></li>
                     <li>
-                        <a href="category.html">Categories</a>
+                        <a href="category.php">Categories</a>
                         <ul>
-                            <li><a href="category.html">Full Width Banner</a></li>
-                            <li><a href="category-banner-boxed-slider.html">Boxed Slider Banner</a></li>
-                            <li><a href="category-banner-boxed-image.html">Boxed Image Banner</a></li>
-                            <li><a href="category.html">Left Sidebar</a></li>
-                            <li><a href="category-sidebar-right.html">Right Sidebar</a></li>
-                            <li><a href="category-flex-grid.html">Product Flex Grid</a></li>
-                            <li><a href="category-horizontal-filter1.html">Horizontal Filter 1</a></li>
-                            <li><a href="category-horizontal-filter2.html">Horizontal Filter 2</a></li>
+                            <li><a href="category.php">Full Width Banner</a></li>
+                            <li><a href="category-banner-boxed-slider.php">Boxed Slider Banner</a></li>
+                            <li><a href="category-banner-boxed-image.php">Boxed Image Banner</a></li>
+                            <li><a href="category.php">Left Sidebar</a></li>
+                            <li><a href="category-sidebar-right.php">Right Sidebar</a></li>
+                            <li><a href="category-flex-grid.php">Product Flex Grid</a></li>
+                            <li><a href="category-horizontal-filter1.php">Horizontal Filter 1</a></li>
+                            <li><a href="category-horizontal-filter2.php">Horizontal Filter 2</a></li>
                             <li><a href="#">Product List Item Types</a></li>
-                            <li><a href="category-infinite-scroll.html">Ajax Infinite Scroll<span class="tip tip-new">New</span></a></li>
-                            <li><a href="category.html">3 Columns Products</a></li>
-                            <li><a href="category-4col.html">4 Columns Products</a></li>
-                            <li><a href="category-5col.html">5 Columns Products</a></li>
-                            <li><a href="category-6col.html">6 Columns Products</a></li>
-                            <li><a href="category-7col.html">7 Columns Products</a></li>
-                            <li><a href="category-8col.html">8 Columns Products</a></li>
+                            <li><a href="category-infinite-scroll.php">Ajax Infinite Scroll<span class="tip tip-new">New</span></a></li>
+                            <li><a href="category.php">3 Columns Products</a></li>
+                            <li><a href="category-4col.php">4 Columns Products</a></li>
+                            <li><a href="category-5col.php">5 Columns Products</a></li>
+                            <li><a href="category-6col.php">6 Columns Products</a></li>
+                            <li><a href="category-7col.php">7 Columns Products</a></li>
+                            <li><a href="category-8col.php">8 Columns Products</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="product.html">Products</a>
+                        <a href="product.php">Products</a>
                         <ul>
                             <li>
                                 <a href="#">Variations</a>
                                 <ul>
-                                    <li><a href="product.html">Horizontal Thumbnails</a></li>
-                                    <li><a href="product-full-width.html">Vertical Thumbnails<span class="tip tip-hot">Hot!</span></a></li>
-                                    <li><a href="product.html">Inner Zoom</a></li>
-                                    <li><a href="product-addcart-sticky.html">Addtocart Sticky</a></li>
-                                    <li><a href="product-sidebar-left.html">Accordion Tabs</a></li>
+                                    <li><a href="product.php">Horizontal Thumbnails</a></li>
+                                    <li><a href="product-full-width.php">Vertical Thumbnails<span class="tip tip-hot">Hot!</span></a></li>
+                                    <li><a href="product.php">Inner Zoom</a></li>
+                                    <li><a href="product-addcart-sticky.php">Addtocart Sticky</a></li>
+                                    <li><a href="product-sidebar-left.php">Accordion Tabs</a></li>
                                 </ul>
                             </li>
                             <li>
                                 <a href="#">Variations</a>
                                 <ul>
-                                    <li><a href="product-sticky-tab.html">Sticky Tabs</a></li>
-                                    <li><a href="product-simple.html">Simple Product</a></li>
-                                    <li><a href="product-sidebar-left.html">With Left Sidebar</a></li>
+                                    <li><a href="product-sticky-tab.php">Sticky Tabs</a></li>
+                                    <li><a href="product-simple.php">Simple Product</a></li>
+                                    <li><a href="product-sidebar-left.php">With Left Sidebar</a></li>
                                 </ul>
                             </li>
                             <li>
                                 <a href="#">Product Layout Types</a>
                                 <ul>
-                                    <li><a href="product.html">Default Layout</a></li>
-                                    <li><a href="product-extended-layout.html">Extended Layout</a></li>
-                                    <li><a href="product-full-width.html">Full Width Layout</a></li>
-                                    <li><a href="product-grid-layout.html">Grid Images Layout</a></li>
-                                    <li><a href="product-sticky-both.html">Sticky Both Side Info<span class="tip tip-hot">Hot!</span></a></li>
-                                    <li><a href="product-sticky-info.html">Sticky Right Side Info</a></li>
+                                    <li><a href="product.php">Default Layout</a></li>
+                                    <li><a href="product-extended-layout.php">Extended Layout</a></li>
+                                    <li><a href="product-full-width.php">Full Width Layout</a></li>
+                                    <li><a href="product-grid-layout.php">Grid Images Layout</a></li>
+                                    <li><a href="product-sticky-both.php">Sticky Both Side Info<span class="tip tip-hot">Hot!</span></a></li>
+                                    <li><a href="product-sticky-info.php">Sticky Right Side Info</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -361,26 +361,26 @@
                     <li>
                         <a href="#">Pages<span class="tip tip-hot">Hot!</span></a>
                         <ul>
-                            <li><a href="cart.html">Shopping Cart</a></li>
+                            <li><a href="cart.php">Shopping Cart</a></li>
                             <li>
                                 <a href="#">Checkout</a>
                                 <ul>
-                                    <li><a href="checkout-shipping.html">Checkout Shipping</a></li>
-                                    <li><a href="checkout-shipping-2.html">Checkout Shipping 2</a></li>
-                                    <li><a href="checkout-review.html">Checkout Review</a></li>
+                                    <li><a href="checkout-shipping.php">Checkout Shipping</a></li>
+                                    <li><a href="checkout-shipping-2.php">Checkout Shipping 2</a></li>
+                                    <li><a href="checkout-review.php">Checkout Review</a></li>
                                 </ul>
                             </li>
-                            <li><a href="about.html">About</a></li>
+                            <li><a href="about.php">About</a></li>
                             <li><a href="#" class="login-link">Login</a></li>
-                            <li><a href="forgot-password.html">Forgot Password</a></li>
+                            <li><a href="forgot-password.php">Forgot Password</a></li>
                         </ul>
                     </li>
-                    <li><a href="blog.html">Blog</a>
+                    <li><a href="blog.php">Blog</a>
                         <ul>
-                            <li><a href="single.html">Blog Post</a></li>
+                            <li><a href="single.php">Blog Post</a></li>
                         </ul>
                     </li>
-                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="contact.php">Contact Us</a></li>
                     <li><a href="#">Special Offer!<span class="tip tip-hot">Hot!</span></a></li>
                     <li><a href="#">Buy Porto!</a></li>
                 </ul>
@@ -427,5 +427,5 @@
     <script src="assets/js/main.min.js"></script>
 </body>
 
-<!-- Mirrored from portotheme.com/html/porto/demo-6/blog.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 14 Feb 2019 14:53:20 GMT -->
+<!-- Mirrored from portotheme.com/php/porto/demo-6/blog.php by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 14 Feb 2019 14:53:20 GMT -->
 </html>
