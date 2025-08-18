@@ -42,6 +42,7 @@
                             </div><!-- End .info-box-content -->
                         </div><!-- End .info-box -->
 
+
                         <div class="info-box">
                             <i class="icon-us-dollar"></i>
 
@@ -72,7 +73,7 @@
                                         <h3>Get up to <span>60%</span> off</h3>
                                         <h1>Summer Sale</h1>
                                         <p>Limited items available at this price.</p>
-                                        <a href="category.html" class="btn btn-dark">Shop Now</a>
+                                        <a href="<?= base_url('category') ?>" class="btn btn-dark">Shop Now</a>
                                     </div><!-- End .home-slide-content -->
                                 </div><!-- End .home-slide -->
 
@@ -82,7 +83,7 @@
                                         <h3>OVER <span>200+</span></h3>
                                         <h1>GREAT DEALS</h1>
                                         <p>While they last!</p>
-                                        <a href="category.php" class="btn btn-dark">Shop Now</a>
+                                        <a href="<?= base_url('category') ?>" class="btn btn-dark">Shop Now</a>
                                     </div><!-- End .home-slide-content -->
                                 </div><!-- End .home-slide -->
 
@@ -92,7 +93,7 @@
                                         <h3>up to <span>40%</span> off</h3>
                                         <h1>NEW ARRIVALS</h1>
                                         <p>Starting at $9</p>
-                                        <a href="category.php" class="btn btn-dark">Shop Now</a>
+                                        <a href="<?= base_url('category') ?>" class="btn btn-dark">Shop Now</a>
                                     </div><!-- End .home-slide-content -->
                                 </div><!-- End .home-slide -->
                             </div><!-- End .home-slider -->
@@ -361,7 +362,7 @@
 
                                         <div class="product product-sm">
                                             <figure class="product-image-container">
-                                                <a href="product.html" class="product-image">
+                                                <a href="product.php" class="product-image">
                                                     <img src="<?= base_url(); ?>/public/assets/images/products/small/product-1.jpg" alt="product">
                                                 </a>
                                             </figure>
@@ -572,7 +573,7 @@
                                     <ul class="menu menu-vertical sf-arrows">
                                         <li class="active"><a href="index.php"><i class="icon-home"></i>Home</a></li>
                                         <li>
-                                            <a href="category.html" class="sf-with-ul"><i class="icon-briefcase"></i>
+                                            <a href="<?= base_url('category') ?>" class="sf-with-ul"><i class="icon-briefcase"></i>
                                             Categories</a>
                                             <div class="megamenu megamenu-fixed-width">
                                                 <div class="row">
@@ -583,14 +584,14 @@
                                                                     <a href="#">Variations 1<span class="tip tip-new">New!</span></a>
                                                                 </div>
                                                                 <ul>
-                                                                    <li><a href="category.php">Fullwidth Banner<span class="tip tip-hot">Hot!</span></a></li>
-                                                                    <li><a href="category-banner-boxed-slider.php">Boxed Slider Banner</a></li>
-                                                                    <li><a href="category-banner-boxed-image.php">Boxed Image Banner</a></li>
-                                                                    <li><a href="category.php">Left Sidebar</a></li>
-                                                                    <li><a href="category-sidebar-right.php">Right Sidebar</a></li>
-                                                                    <li><a href="category-flex-grid.php">Product Flex Grid</a></li>
-                                                                    <li><a href="category-horizontal-filter1.php">Horizontal Filter1</a></li>
-                                                                    <li><a href="category-horizontal-filter2.php">Horizontal Filter2</a></li>
+                                                                    <li><a href="<?= base_url('category') ?>">Fullwidth Banner<span class="tip tip-hot">Hot!</span></a></li>
+                                                                    <li><a href="<?= base_url('category') ?>">Boxed Slider Banner</a></li>
+                                                                    <li><a href="<?= base_url('category') ?>">Boxed Image Banner</a></li>
+                                                                    <li><a href="<?= base_url('category') ?>">Left Sidebar</a></li>
+                                                                    <li><a href="<?= base_url('category') ?>">Right Sidebar</a></li>
+                                                                    <li><a href="<?= base_url('category') ?>">Product Flex Grid</a></li>
+                                                                    <li><a href="<?= base_url('category') ?>">Horizontal Filter1</a></li>
+                                                                    <li><a href="<?= base_url('category') ?>">Horizontal Filter2</a></li>
                                                                 </ul>
                                                             </div><!-- End .col-lg-6 -->
                                                             <div class="col-lg-6">
@@ -599,13 +600,13 @@
                                                                 </div>
                                                                 <ul>
                                                                     <li><a href="#">Product List Item Types</a></li>
-                                                                    <li><a href="category-infinite-scroll.php">Ajax Infinite Scroll</a></li>
-                                                                    <li><a href="category.php">3 Columns Products</a></li>
-                                                                    <li><a href="category-4col.php">4 Columns Products <span class="tip tip-new">New</span></a></li>
-                                                                    <li><a href="category-5col.php">5 Columns Products</a></li>
-                                                                    <li><a href="category-6col.php">6 Columns Products</a></li>
-                                                                    <li><a href="category-7col.php">7 Columns Products</a></li>
-                                                                    <li><a href="category-8col.php">8 Columns Products</a></li>
+                                                                    <li><a href="<?= base_url('category') ?>">Ajax Infinite Scroll</a></li>
+                                                                    <li><a href="<?= base_url('category') ?>">3 Columns Products</a></li>
+                                                                    <li><a href="<?= base_url('category') ?>"4 Columns Products <span class="tip tip-new">New</span></a></li>
+                                                                    <li><a href="<?= base_url('category') ?>">5 Columns Products</a></li>
+                                                                    <li><a href="<?= base_url('category') ?>">6 Columns Products</a></li>
+                                                                    <li><a href="<?= base_url('category') ?>">7 Columns Products</a></li>
+                                                                    <li><a href="<?= base_url('category') ?>">8 Columns Products</a></li>
                                                                 </ul>
                                                             </div><!-- End .col-lg-6 -->
                                                         </div><!-- End .row -->
@@ -621,7 +622,7 @@
                                             </div><!-- End .megamenu -->
                                         </li>
                                         <li class="megamenu-container">
-                                            <a href="product.html" class="sf-with-ul"><i class="icon-video"></i>Products</a>
+                                            <a href="product.php" class="sf-with-ul"><i class="icon-video"></i>Products</a>
                                             <div class="megamenu">
                                                 <div class="row">
                                                     <div class="col-lg-8">
@@ -691,10 +692,12 @@
                                                         <li><a href="my-account.php">My Account</a></li>
                                                     </ul>
                                                 </li>
-                                                <li><a href="about.php">About Us</a></li>
-                                                <li><a href="#">Blog</a>
+                                                
+                                                <li> <a href="<?= base_url('about/') ?>">About Us</a></li>
+
+                                                <li><a href="<?= base_url() ?>/blog/index">Blog</a>
                                                     <ul>
-                                                        <li><a href="blog.php">Blog</a></li>
+                                                        <li><a href="<?= base_url(); ?>/blog/index">Blog</a></li>
                                                         <li><a href="single.php">Blog Post</a></li>
                                                     </ul>
                                                 </li>
@@ -820,24 +823,24 @@
                     <ul class="mobile-menu">
                         <li class="active"><a href="index.php">Home</a></li>
                         <li>
-                            <a href="category.php">Categories</a>
+                            <a href="<?= base_url('category') ?>">Categories</a>
                             <ul>
-                                <li><a href="category.php">Full Width Banner</a></li>
-                                <li><a href="category-banner-boxed-slider.php">Boxed Slider Banner</a></li>
-                                <li><a href="category-banner-boxed-image.php">Boxed Image Banner</a></li>
-                                <li><a href="category.php">Left Sidebar</a></li>
-                                <li><a href="category-sidebar-right.php">Right Sidebar</a></li>
-                                <li><a href="category-flex-grid.php">Product Flex Grid</a></li>
-                                <li><a href="category-horizontal-filter1.php">Horizontal Filter 1</a></li>
-                                <li><a href="category-horizontal-filter2.php">Horizontal Filter 2</a></li>
+                                <li><a href="<?= base_url('category') ?>"Full Width Banner</a></li>
+                                <li><a href="<?= base_url('category') ?>">Boxed Slider Banner</a></li>
+                                <li><a href="<?= base_url('category') ?>">Boxed Image Banner</a></li>
+                                <li><a href="<?= base_url('category') ?>">Left Sidebar</a></li>
+                                <li><a href="<?= base_url('category') ?>">Right Sidebar</a></li>
+                                <li><a href="<?= base_url('category') ?>">Product Flex Grid</a></li>
+                                <li><a href="<?= base_url('category') ?>">Horizontal Filter 1</a></li>
+                                <li><a href="<?= base_url('category') ?>">Horizontal Filter 2</a></li>
                                 <li><a href="#">Product List Item Types</a></li>
-                                <li><a href="category-infinite-scroll.php">Ajax Infinite Scroll<span class="tip tip-new">New</span></a></li>
-                                <li><a href="category.php">3 Columns Products</a></li>
-                                <li><a href="category-4col.php">4 Columns Products</a></li>
-                                <li><a href="category-5col.php">5 Columns Products</a></li>
-                                <li><a href="category-6col.php">6 Columns Products</a></li>
-                                <li><a href="category-7col.php">7 Columns Products</a></li>
-                                <li><a href="category-8col.php">8 Columns Products</a></li>
+                                <li><a href="<?= base_url('category') ?>">Ajax Infinite Scroll<span class="tip tip-new">New</span></a></li>
+                                <li><a href="<?= base_url('category') ?>">3 Columns Products</a></li>
+                                <li><a href="<?= base_url('category') ?>">4 Columns Products</a></li>
+                                <li><a href="<?= base_url('category') ?>">5 Columns Products</a></li>
+                                <li><a href="<?= base_url('category') ?>">6 Columns Products</a></li>
+                                <li><a href="<?= base_url('category') ?>">7 Columns Products</a></li>
+                                <li><a href="<?= base_url('category') ?>">8 Columns Products</a></li>
                             </ul>
                         </li>
                         <li>
@@ -886,12 +889,12 @@
                                         <li><a href="checkout-review.php">Checkout Review</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="about.php">About</a></li>
+                                <li> <a href="<?= base_url('about/') ?>">About</a></li>
                                 <li><a href="#" class="login-link">Login</a></li>
                                 <li><a href="forgot-password.php">Forgot Password</a></li>
                             </ul>
                         </li>
-                        <li><a href="blog.php">Blog</a>
+                        <li><a href="<?= base_url(); ?>/blog/index">Blog</a>
                             <ul>
                                 <li><a href="single.php">Blog Post</a></li>
                             </ul>
@@ -943,5 +946,5 @@
         <script src="<?= base_url(); ?>/public/assets/js/main.min.js"></script>
     </body>
     </html>
-<?= $this->endSection('content'); ?>
+<?= $this->endSection(); ?>
 
