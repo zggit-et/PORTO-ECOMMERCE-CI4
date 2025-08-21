@@ -31,7 +31,9 @@
 
 
             <main class="main">
+                <!-- Info Boxes  -->
                 <div class="info-boxes-container">
+
                     <div class="container">
                         <div class="info-box">
                             <i class="icon-shipping"></i>
@@ -39,8 +41,8 @@
                             <div class="info-box-content">
                                 <h4>FREE SHIPPING & RETURN</h4>
                                 <p>Free shipping on all orders over $99.</p>
-                            </div><!-- End .info-box-content -->
-                        </div><!-- End .info-box -->
+                            </div><!-- End .info-box-content  -->
+                        </div><!-- End .info-box  of free shiping-->
 
 
                         <div class="info-box">
@@ -50,7 +52,7 @@
                                 <h4>MONEY BACK GUARANTEE</h4>
                                 <p>100% money back guarantee</p>
                             </div><!-- End .info-box-content -->
-                        </div><!-- End .info-box -->
+                        </div><!-- End .info-box  of mony back guarantee-->
 
                         <div class="info-box">
                             <i class="icon-support"></i>
@@ -59,7 +61,8 @@
                                 <h4>ONLINE SUPPORT 24/7</h4>
                                 <p>Lorem ipsum dolor sit amet.</p>
                             </div><!-- End .info-box-content -->
-                        </div><!-- End .info-box -->
+                        </div><!-- End .info-box  of online support-->
+
                     </div><!-- End .container -->
                 </div><!-- End .info-boxes-container -->
 
@@ -67,247 +70,82 @@
                     <div class="row">
                         <div class="col-lg-9">
                             <div class="home-slider owl-carousel owl-carousel-lazy owl-theme owl-theme-light">
-                                <div class="home-slide">
-                                    <div class="owl-lazy slide-bg" data-src="<?= base_url(); ?>/public/assets/images/slider/slide-1.jpg"></div>
-                                    <div class="home-slide-content text-white">
-                                        <h3>Get up to <span>60%</span> off</h3>
-                                        <h1>Summer Sale</h1>
-                                        <p>Limited items available at this price.</p>
-                                        <a href="<?= base_url('category') ?>" class="btn btn-dark">Shop Now</a>
-                                    </div><!-- End .home-slide-content -->
-                                </div><!-- End .home-slide -->
 
-                                <div class="home-slide">
-                                    <div class="owl-lazy slide-bg" data-src="<?= base_url(); ?>/public/assets/images/slider/slide-2.jpg"></div>
-                                    <div class="home-slide-content">
-                                        <h3>OVER <span>200+</span></h3>
-                                        <h1>GREAT DEALS</h1>
-                                        <p>While they last!</p>
-                                        <a href="<?= base_url('category') ?>" class="btn btn-dark">Shop Now</a>
-                                    </div><!-- End .home-slide-content -->
-                                </div><!-- End .home-slide -->
+                                
 
+                                <!-- Loop through sliderData array -->
+                                <?php foreach ($sliderData as $slide): ?>
                                 <div class="home-slide">
-                                    <div class="owl-lazy slide-bg" data-src="<?= base_url(); ?>/public/assets/images/slider/slide-3.jpg"></div>
+                                    <div class="owl-lazy slide-bg" data-src="<?= base_url($slide['image']) ?>"></div>
                                     <div class="home-slide-content">
-                                        <h3>up to <span>40%</span> off</h3>
-                                        <h1>NEW ARRIVALS</h1>
-                                        <p>Starting at $9</p>
-                                        <a href="<?= base_url('category') ?>" class="btn btn-dark">Shop Now</a>
+                                        <h3><?= $slide['subtitle'] ?></h3>
+                                        <h1><?= $slide['title'] ?></h1>
+                                        <p><?= $slide['description'] ?></p>
+                                        <a href="<?= base_url('category/') ?>" class="btn btn-dark">Shop Now</a>
                                     </div><!-- End .home-slide-content -->
                                 </div><!-- End .home-slide -->
+                                <?php endforeach; ?>
+
                             </div><!-- End .home-slider -->
 
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="banner banner-image">
-                                        <a href="#">
-                                            <img src="<?= base_url(); ?>/public/assets/images/banners/banner-1.jpg" alt="banner">
-                                        </a>
-                                    </div><!-- End .banner -->
-                                </div><!-- End .col-md-4 -->
+                            <div class="row"><!-- this is promotion  -->
 
-                                <div class="col-md-4">
-                                    <div class="banner banner-image">
-                                        <a href="#">
-                                            <img src="<?= base_url(); ?>/public/assets/images/banners/banner-2.jpg" alt="banner">
-                                        </a>
-                                    </div><!-- End .banner -->
-                                </div><!-- End .col-md-4 -->
+                                <?php foreach ($bannerimg as $image): ?>
+                                    <div class="col-md-4">
+                                        <div class="banner banner-image">
+                                            <a href="#">
+                                                <img src="<?= base_url($image['image']) ?>" alt="<?= $image['alternative_text'] ?>">
+                                            </a>
+                                        </div><!-- End .banner -->
+                                    </div><!-- End .col-md-4 -->
+                                <?php endforeach; ?>
 
-                                <div class="col-md-4">
-                                    <div class="banner banner-image">
-                                        <a href="#">
-                                            <img src="<?= base_url(); ?>/public/assets/images/banners/banner-3.jpg" alt="banner">
-                                        </a>
-                                    </div><!-- End .banner -->
-                                </div><!-- End .col-md-4 -->
                             </div><!-- End .row -->
+
 
                             <div class="mb-3"></div><!-- margin -->
 
                             <h2 class="carousel-title">Featured Products</h2>
-
+                             <!-- feature products containerproduct -->
                             <div class="home-featured-products owl-carousel owl-theme owl-dots-top">
-                                <div class="product">
-                                    <figure class="product-image-container">
-                                        <a href="product.php" class="product-image">
-                                            <img src="<?= base_url(); ?>/public/assets/images/products/home-featured-1.jpg" alt="product">
-                                        </a>
-                                        <a href="ajax/product-quick-view.html" class="btn-quickview">Quick View</a>
-                                    </figure>
-                                    <div class="product-details">
-                                        <div class="ratings-container">
-                                            <div class="product-ratings">
-                                                <span class="ratings" style="width:80%"></span><!-- End .ratings -->
-                                            </div><!-- End .product-ratings -->
-                                        </div><!-- End .product-container -->
-                                        <h2 class="product-title">
-                                            <a href="product.php">Wireless Headset</a>
-                                        </h2>
-                                        <div class="price-box">
-                                            <span class="product-price">$28.00</span>
-                                        </div><!-- End .price-box -->
-
-                                        <div class="product-action">
-                                            <a href="#" class="paction add-wishlist" title="Add to Wishlist">
-                                                <span>Add to Wishlist</span>
+                                <?php foreach ($featured_products as $featured): ?>
+                                    <div class="product">
+                                        <figure class="product-image-container">
+                                            <a href="product.php" class="product-image">
+                                                <img src='<?= base_url($featured['image']) ?>' alt="<?= $featured['alternative_text'] ?>">
                                             </a>
+                                            <a href="ajax/product-quick-view.php" class="btn-quickview">Quick View</a>
+                                        </figure>
+                                        <div class="product-details">
+                                            <div class="ratings-container">
+                                                <div class="product-ratings">
+                                                    <span class="ratings" style="width:80%"></span><!-- End .ratings -->
+                                                </div><!-- End .product-ratings -->
+                                            </div><!-- End .product-container -->
+                                            <h2 class="product-title">
+                                                <a href="product.php"><?= $featured['product_name'] ?></a> <!-- Fixed: product_name -->
+                                            </h2>
+                                            <div class="price-box">
+                                                <span class="product-price"><?= $featured['price'] ?></span> <!-- Fixed: price instead of product_name -->
+                                            </div><!-- End .price-box -->
 
-                                            <a href="product.php" class="paction add-cart" title="Add to Cart">
-                                                <span>Add to Cart</span>
-                                            </a>
+                                            <div class="product-action">
+                                                <a href="#" class="paction add-wishlist" title="Add to Wishlist">
+                                                    <span>Add to Wishlist</span>
+                                                </a>
 
-                                            <a href="#" class="paction add-compare" title="Add to Compare">
-                                                <span>Add to Compare</span>
-                                            </a>
-                                        </div><!-- End .product-action -->
-                                    </div><!-- End .product-details -->
-                                </div><!-- End .product -->
+                                                <a href="product.php" class="paction add-cart" title="Add to Cart">
+                                                    <span>Add to Cart</span>
+                                                </a>
 
-                                <div class="product">
-                                    <figure class="product-image-container">
-                                        <a href="product.php" class="product-image">
-                                            <img src="<?= base_url(); ?>/public/assets/images/products/home-featured-2.jpg" alt="product">
-                                        </a>
-                                        <a href="ajax/product-quick-view.html" class="btn-quickview">Quick View</a>
-                                    </figure>
-                                    <div class="product-details">
-                                        <div class="ratings-container">
-                                            <div class="product-ratings">
-                                                <span class="ratings" style="width:100%"></span><!-- End .ratings -->
-                                            </div><!-- End .product-ratings -->
-                                        </div><!-- End .product-container -->
-                                        <h2 class="product-title">
-                                            <a href="product.php">Bluetooth Headset</a>
-                                        </h2>
-                                        <div class="price-box">
-                                            <span class="product-price">$28.00</span>
-                                        </div><!-- End .price-box -->
-
-                                        <div class="product-action">
-                                            <a href="#" class="paction add-wishlist" title="Add to Wishlist">
-                                                <span>Add to Wishlist</span>
-                                            </a>
-
-                                            <a href="product.php" class="paction add-cart" title="Add to Cart">
-                                                <span>Add to Cart</span>
-                                            </a>
-
-                                            <a href="#" class="paction add-compare" title="Add to Compare">
-                                                <span>Add to Compare</span>
-                                            </a>
-                                        </div><!-- End .product-action -->
-                                    </div><!-- End .product-details -->
-                                </div><!-- End .product -->
-
-                                <div class="product">
-                                    <figure class="product-image-container">
-                                        <a href="product.php" class="product-image">
-                                            <img src="<?= base_url(); ?>/public/assets/images/products/home-featured-3.jpg" alt="product">
-                                        </a>
-                                        <a href="ajax/product-quick-view.php" class="btn-quickview">Quick View</a>
-                                    </figure>
-                                    <div class="product-details">
-                                        <div class="ratings-container">
-                                            <div class="product-ratings">
-                                                <span class="ratings" style="width:40%"></span><!-- End .ratings -->
-                                            </div><!-- End .product-ratings -->
-                                        </div><!-- End .product-container -->
-                                        <h2 class="product-title">
-                                            <a href="product.php">MSK02 Headset</a>
-                                        </h2>
-                                        <div class="price-box">
-                                            <span class="product-price">$28.00</span>
-                                        </div><!-- End .price-box -->
-
-                                        <div class="product-action">
-                                            <a href="#" class="paction add-wishlist" title="Add to Wishlist">
-                                                <span>Add to Wishlist</span>
-                                            </a>
-
-                                            <a href="product.php" class="paction add-cart" title="Add to Cart">
-                                                <span>Add to Cart</span>
-                                            </a>
-
-                                            <a href="#" class="paction add-compare" title="Add to Compare">
-                                                <span>Add to Compare</span>
-                                            </a>
-                                        </div><!-- End .product-action -->
-                                    </div><!-- End .product-details -->
-                                </div><!-- End .product -->
-
-                                <div class="product">
-                                    <figure class="product-image-container">
-                                        <a href="product.php" class="product-image">
-                                            <img src="<?= base_url(); ?>/public/assets/images/products/home-featured-4.jpg" alt="product">
-                                        </a>
-                                        <a href="ajax/product-quick-view.php" class="btn-quickview">Quick View</a>
-                                    </figure>
-                                    <div class="product-details">
-                                        <div class="ratings-container">
-                                            <div class="product-ratings">
-                                                <span class="ratings" style="width:0%"></span><!-- End .ratings -->
-                                            </div><!-- End .product-ratings -->
-                                        </div><!-- End .product-container -->
-                                        <h2 class="product-title">
-                                            <a href="product.php">Noise CT</a>
-                                        </h2>
-                                        <div class="price-box">
-                                            <span class="product-price">$28.00</span>
-                                        </div><!-- End .price-box -->
-
-                                        <div class="product-action">
-                                            <a href="#" class="paction add-wishlist" title="Add to Wishlist">
-                                                <span>Add to Wishlist</span>
-                                            </a>
-
-                                            <a href="product.php" class="paction add-cart" title="Add to Cart">
-                                                <span>Add to Cart</span>
-                                            </a>
-
-                                            <a href="#" class="paction add-compare" title="Add to Compare">
-                                                <span>Add to Compare</span>
-                                            </a>
-                                        </div><!-- End .product-action -->
-                                    </div><!-- End .product-details -->
-                                </div><!-- End .product -->
-
-                                <div class="product">
-                                    <figure class="product-image-container">
-                                        <a href="product.php" class="product-image">
-                                            <img src="<?= base_url(); ?>/public/assets/images/products/home-featured-5.jpg" alt="product">
-                                        </a>
-                                        <a href="ajax/product-quick-view.php" class="btn-quickview">Quick View</a>
-                                    </figure>
-                                    <div class="product-details">
-                                        <div class="ratings-container">
-                                            <div class="product-ratings">
-                                                <span class="ratings" style="width:50%"></span><!-- End .ratings -->
-                                            </div><!-- End .product-ratings -->
-                                        </div><!-- End .product-container -->
-                                        <h2 class="product-title">
-                                            <a href="product.php">Stereo Headset</a>
-                                        </h2>
-                                        <div class="price-box">
-                                            <span class="product-price">$28.00</span>
-                                        </div><!-- End .price-box -->
-
-                                        <div class="product-action">
-                                            <a href="#" class="paction add-wishlist" title="Add to Wishlist">
-                                                <span>Add to Wishlist</span>
-                                            </a>
-
-                                            <a href="product.php" class="paction add-cart" title="Add to Cart">
-                                                <span>Add to Cart</span>
-                                            </a>
-
-                                            <a href="#" class="paction add-compare" title="Add to Compare">
-                                                <span>Add to Compare</span>
-                                            </a>
-                                        </div><!-- End .product-action -->
-                                    </div><!-- End .product-details -->
-                                </div><!-- End .product -->
+                                                <a href="#" class="paction add-compare" title="Add to Compare">
+                                                    <span>Add to Compare</span>
+                                                </a>
+                                            </div><!-- End .product-action -->
+                                        </div><!-- End .product-details -->
+                                    </div><!-- End .product -->
+                                <?php endforeach; ?>
+  
                             </div><!-- End .featured-proucts -->
 
                             <div class="mb-6"></div><!-- margin -->
@@ -316,210 +154,89 @@
                                 <div class="col-6 col-md-4">
                                     <div class="product-column">
                                         <h3 class="title">New</h3>
+                                        <?php foreach ($new_products as $new): ?>
+                                            <div class="product product-sm">
+                                                <figure class="product-image-container">
+                                                    <a href="product.php" class="product-image">
+                                                        <img src='<?= base_url($new['image']) ?>' alt="<?= $featured['alternative_text'] ?>">
+                                                    </a>
+                                                </figure>
+                                                <div class="product-details">
+                                                    <h2 class="product-title">
+                                                        <a href="product.php"><?= $new['product_name'] ?></a>
+                                                    </h2>
+                                                    <div class="ratings-container">
+                                                        <div class="product-ratings">
+                                                            <span class="ratings" style="width:80%"></span><!-- End .ratings -->
+                                                        </div><!-- End .product-ratings -->
+                                                    </div><!-- End .product-container -->
+                                                    <div class="price-box">
+                                                        <span class="product-price"><?= $new['price'] ?></span>
+                                                    </div><!-- End .price-box -->
+                                                </div><!-- End .product-details -->
+                                            </div><!-- End .product -->
+                                        <?php endforeach; ?>
 
-                                        <div class="product product-sm">
-                                            <figure class="product-image-container">
-                                                <a href="product.php" class="product-image">
-                                                    <img src="<?= base_url(); ?>/public/assets/images/products/home-featured-3.jpg" alt="product">
-                                                </a>
-                                            </figure>
-                                            <div class="product-details">
-                                                <h2 class="product-title">
-                                                    <a href="product.php">Silver Porto Headset</a>
-                                                </h2>
-                                                <div class="ratings-container">
-                                                    <div class="product-ratings">
-                                                        <span class="ratings" style="width:80%"></span><!-- End .ratings -->
-                                                    </div><!-- End .product-ratings -->
-                                                </div><!-- End .product-container -->
-                                                <div class="price-box">
-                                                    <span class="product-price">$45.00</span>
-                                                </div><!-- End .price-box -->
-                                            </div><!-- End .product-details -->
-                                        </div><!-- End .product -->
-
-                                        <div class="product product-sm">
-                                            <figure class="product-image-container">
-                                                <a href="product.php" class="product-image">
-                                                    <img src="<?= base_url(); ?>/public/assets/images/products/home-featured-4.jpg" alt="product">
-                                                </a>
-                                            </figure>
-                                            <div class="product-details">
-                                                <h2 class="product-title">
-                                                    <a href="product.php">Headphone Black</a>
-                                                </h2>
-                                                <div class="ratings-container">
-                                                    <div class="product-ratings">
-                                                        <span class="ratings" style="width:20%"></span><!-- End .ratings -->
-                                                    </div><!-- End .product-ratings -->
-                                                </div><!-- End .product-container -->
-                                                <div class="price-box">
-                                                    <span class="old-price">$60.00</span>
-                                                    <span class="product-price">$45.00</span>
-                                                </div><!-- End .price-box -->
-                                            </div><!-- End .product-details -->
-                                        </div><!-- End .product -->
-
-                                        <div class="product product-sm">
-                                            <figure class="product-image-container">
-                                                <a href="product.php" class="product-image">
-                                                    <img src="<?= base_url(); ?>/public/assets/images/products/small/product-1.jpg" alt="product">
-                                                </a>
-                                            </figure>
-                                            <div class="product-details">
-                                                <h2 class="product-title">
-                                                    <a href="product.php">Computer Mouse</a>
-                                                </h2>
-                                                <div class="ratings-container">
-                                                    <div class="product-ratings">
-                                                        <span class="ratings" style="width:100%"></span><!-- End .ratings -->
-                                                    </div><!-- End .product-ratings -->
-                                                </div><!-- End .product-container -->
-                                                <div class="price-box">
-                                                    <span class="product-price">$50.00</span>
-                                                </div><!-- End .price-box -->
-                                            </div><!-- End .product-details -->
-                                        </div><!-- End .product -->
                                     </div><!-- End .product-column -->
+
                                 </div><!-- End .col-md-4 -->
 
                                 <div class="col-6 col-md-4">
                                     <div class="product-column">
                                         <h3 class="title">Hot</h3>
+                                        <?php foreach ($new_products as $new): ?>
+                                            <div class="product product-sm">
+                                                <figure class="product-image-container">
+                                                    <a href="product.php" class="product-image">
+                                                        <img src='<?= base_url($new['image']) ?>' alt="<?= $featured['alternative_text'] ?>">
+                                                    </a>
+                                                </figure>
+                                                <div class="product-details">
+                                                    <h2 class="product-title">
+                                                        <a href="product.php"><?= $new['product_name'] ?></a>
+                                                    </h2>
+                                                    <div class="ratings-container">
+                                                        <div class="product-ratings">
+                                                            <span class="ratings" style="width:20%"></span><!-- End .ratings -->
+                                                        </div><!-- End .product-ratings -->
+                                                    </div><!-- End .product-container -->
+                                                    <div class="price-box">
+                                                        <span class="product-price"><?= $new['price'] ?></span>
+                                                    </div><!-- End .price-box -->
+                                                </div><!-- End .product-details -->
+                                            </div><!-- End .product -->
+                                         <?php endforeach; ?>
 
-                                        <div class="product product-sm">
-                                            <figure class="product-image-container">
-                                                <a href="product.php" class="product-image">
-                                                    <img src="<?= base_url(); ?>/public/assets/images/products/home-featured-1.jpg" alt="product">
-                                                </a>
-                                            </figure>
-                                            <div class="product-details">
-                                                <h2 class="product-title">
-                                                    <a href="product.php">Porto Evolution Headset</a>
-                                                </h2>
-                                                <div class="ratings-container">
-                                                    <div class="product-ratings">
-                                                        <span class="ratings" style="width:20%"></span><!-- End .ratings -->
-                                                    </div><!-- End .product-ratings -->
-                                                </div><!-- End .product-container -->
-                                                <div class="price-box">
-                                                    <span class="product-price">$13.00</span>
-                                                </div><!-- End .price-box -->
-                                            </div><!-- End .product-details -->
-                                        </div><!-- End .product -->
-
-                                        <div class="product product-sm">
-                                            <figure class="product-image-container">
-                                                <a href="product.php" class="product-image">
-                                                    <img src="<?= base_url(); ?>/public/assets/images/products/home-featured-2.jpg" alt="product">
-                                                </a>
-                                            </figure>
-                                            <div class="product-details">
-                                                <h2 class="product-title">
-                                                    <a href="product.php">Audio Technicca</a>
-                                                </h2>
-                                                <div class="ratings-container">
-                                                    <div class="product-ratings">
-                                                        <span class="ratings" style="width:50%"></span><!-- End .ratings -->
-                                                    </div><!-- End .product-ratings -->
-                                                </div><!-- End .product-container -->
-                                                <div class="price-box">
-                                                    <span class="old-price">$42.00</span>
-                                                    <span class="product-price">$27.00</span>
-                                                </div><!-- End .price-box -->
-                                            </div><!-- End .product-details -->
-                                        </div><!-- End .product -->
-
-                                        <div class="product product-sm">
-                                            <figure class="product-image-container">
-                                                <a href="product.php" class="product-image">
-                                                    <img src="<?= base_url(); ?>/public/assets/images/products/home-featured-5.jpg" alt="product">
-                                                </a>
-                                            </figure>
-                                            <div class="product-details">
-                                                <h2 class="product-title">
-                                                    <a href="product.php">Senheisser</a>
-                                                </h2>
-                                                <div class="ratings-container">
-                                                    <div class="product-ratings">
-                                                        <span class="ratings" style="width:0%"></span><!-- End .ratings -->
-                                                    </div><!-- End .product-ratings -->
-                                                </div><!-- End .product-container -->
-                                                <div class="price-box">
-                                                    <span class="product-price">$35.00</span>
-                                                </div><!-- End .price-box -->
-                                            </div><!-- End .product-details -->
-                                        </div><!-- End .product -->
+                                        
                                     </div><!-- End .product-column -->
                                 </div><!-- End .col-md-4 -->
 
                                 <div class="col-6 col-md-4">
                                     <div class="product-column">
                                         <h3 class="title">Sale</h3>
+                                        <?php foreach ($new_products as $new): ?>   
+                                            <div class="product product-sm">
+                                                <figure class="product-image-container">
+                                                    <a href="product.php" class="product-image">
+                                                        <img src='<?= base_url($new['image']) ?>' alt="<?= $featured['alternative_text'] ?>">
+                                                    </a>
+                                                </figure>
+                                                <div class="product-details">
+                                                    <h2 class="product-title">
+                                                        <a href="product.php"><?= $new['product_name'] ?></a>
+                                                    </h2>
+                                                    <div class="ratings-container">
+                                                        <div class="product-ratings">
+                                                            <span class="ratings" style="width:20%"></span><!-- End .ratings -->
+                                                        </div><!-- End .product-ratings -->
+                                                    </div><!-- End .product-container -->
+                                                    <div class="price-box">
+                                                        <span class="product-price"><?= $new['price'] ?></span>
+                                                    </div><!-- End .price-box -->
+                                                </div><!-- End .product-details -->
+                                            </div><!-- End .product -->
+                                        <?php endforeach; ?>
 
-                                        <div class="product product-sm">
-                                            <figure class="product-image-container">
-                                                <a href="product.php" class="product-image">
-                                                    <img src="<?= base_url(); ?>/public/assets/images/products/home-featured-4.jpg" alt="product">
-                                                </a>
-                                            </figure>
-                                            <div class="product-details">
-                                                <h2 class="product-title">
-                                                    <a href="product.php">Phillips</a>
-                                                </h2>
-                                                <div class="ratings-container">
-                                                    <div class="product-ratings">
-                                                        <span class="ratings" style="width:20%"></span><!-- End .ratings -->
-                                                    </div><!-- End .product-ratings -->
-                                                </div><!-- End .product-container -->
-                                                <div class="price-box">
-                                                    <span class="product-price">$13.00</span>
-                                                </div><!-- End .price-box -->
-                                            </div><!-- End .product-details -->
-                                        </div><!-- End .product -->
-
-                                        <div class="product product-sm">
-                                            <figure class="product-image-container">
-                                                <a href="product.php" class="product-image">
-                                                    <img src="<?= base_url(); ?>/public/assets/images/products/small/product-1.jpg" alt="product">
-                                                </a>
-                                            </figure>
-                                            <div class="product-details">
-                                                <h2 class="product-title">
-                                                    <a href="product.php">Computer Mouse</a>
-                                                </h2>
-                                                <div class="ratings-container">
-                                                    <div class="product-ratings">
-                                                        <span class="ratings" style="width:50%"></span><!-- End .ratings -->
-                                                    </div><!-- End .product-ratings -->
-                                                </div><!-- End .product-container -->
-                                                <div class="price-box">
-                                                    <span class="old-price">$42.00</span>
-                                                    <span class="product-price">$27.00</span>
-                                                </div><!-- End .price-box -->
-                                            </div><!-- End .product-details -->
-                                        </div><!-- End .product -->
-
-                                        <div class="product product-sm">
-                                            <figure class="product-image-container">
-                                                <a href="product.php" class="product-image">
-                                                    <img src="<?= base_url(); ?>/public/assets/images/products/home-featured-3.jpg" alt="product">
-                                                </a>
-                                            </figure>
-                                            <div class="product-details">
-                                                <h2 class="product-title">
-                                                    <a href="product.php">Skullcanddy</a>
-                                                </h2>
-                                                <div class="ratings-container">
-                                                    <div class="product-ratings">
-                                                        <span class="ratings" style="width:0%"></span><!-- End .ratings -->
-                                                    </div><!-- End .product-ratings -->
-                                                </div><!-- End .product-container -->
-                                                <div class="price-box">
-                                                    <span class="product-price">$35.00</span>
-                                                </div><!-- End .price-box -->
-                                            </div><!-- End .product-details -->
-                                        </div><!-- End .product -->
                                     </div><!-- End .product-column -->
                                 </div><!-- End .col-md-4 -->
                             </div><!-- End .row -->
@@ -527,41 +244,21 @@
                             <div class="mb-3"></div><!-- margin -->
 
                             <div class="row">
-                                <div class="col-sm-6 col-md-4">
-                                    <div class="feature-box feature-box-simple text-center">
-                                        <i class="icon-star"></i>
+                                <?php foreach ($porto_info as $info): ?> 
+                                    <div class="col-sm-6 col-md-4">
+                                        <div class="feature-box feature-box-simple text-center">
+                                            <i class="<?= $info['icon'] ?>"></i>
 
-                                        <div class="feature-box-content">
-                                            <h3>Dedicated Service</h3>
-                                            <p>Consult our specialists for help with an order, customization, or design advice</p>
-                                            <a href="#" class="btn btn-outline-dark">Get in touch</a>
-                                        </div><!-- End .feature-box-content -->
-                                    </div><!-- End .feature-box -->
-                                </div><!-- End .col-md-4 -->
+                                            <div class="feature-box-content">
+                                                <h3><?= $info['title'] ?></h3>
+                                                <p><?= $info['description'] ?></p>
+                                                <a href="<?= $info['link_url'] ?>" class="btn btn-outline-dark"><?= $info['link_text'] ?></a>
+                                            </div><!-- End .feature-box-content -->
+                                        </div><!-- End .feature-box -->
+                                    </div><!-- End .col-md-4 -->
+                                 <?php endforeach; ?>
                                 
-                                <div class="col-sm-6 col-md-4">
-                                    <div class="feature-box feature-box-simple text-center">
-                                        <i class="icon-reply"></i>
-
-                                        <div class="feature-box-content">
-                                            <h3>Free Returns</h3>
-                                            <p>We stand behind our goods and services and want you to be satisfied with them.</p>
-                                            <a href="#" class="btn btn-outline-dark">Return Policy</a>
-                                        </div><!-- End .feature-box-content -->
-                                    </div><!-- End .feature-box -->
-                                </div><!-- End .col-md-4 -->
-
-                                <div class="col-sm-6 col-md-4">
-                                    <div class="feature-box feature-box-simple text-center">
-                                        <i class="icon-paper-plane"></i>
-
-                                        <div class="feature-box-content">
-                                            <h3>International Shipping</h3>
-                                            <p>Currently over 50 countries qualify for express international shipping.</p>
-                                            <a href="#" class="btn btn-outline-dark">Lear More</a>
-                                        </div><!-- End .feature-box-content -->
-                                    </div><!-- End .feature-box -->
-                                </div><!-- End .col-md-4 -->
+                               
                             </div><!-- End .row -->
                         </div><!-- End .col-lg-9 -->
 
@@ -823,7 +520,7 @@
                     <ul class="mobile-menu">
                         <li class="active"><a href="index.php">Home</a></li>
                         <li>
-                            <a href="<?= base_url('category') ?>">Categories</a>
+                            <a href="<?= base_url('category/') ?>">Categories</a>
                             <ul>
                                 <li><a href="<?= base_url('category') ?>"Full Width Banner</a></li>
                                 <li><a href="<?= base_url('category') ?>">Boxed Slider Banner</a></li>

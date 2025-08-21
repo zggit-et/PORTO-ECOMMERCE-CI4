@@ -22,7 +22,7 @@
     <!-- Main CSS File -->
     <link rel="stylesheet" href="<?= base_url(); ?>/public/assets/css/style.min.css">
 </head>
-<body>
+<body><?= base_url(); ?>/public/ublic/
     <div class="page-wrapper">
         <header class="header">
             <div class="header-top">

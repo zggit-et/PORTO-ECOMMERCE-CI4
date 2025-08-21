@@ -7,7 +7,7 @@ class About extends BaseController
     public function index()
     {
         
-     return view("about_view");
+     return view("Admin-view/about_view");
         
         
     }
